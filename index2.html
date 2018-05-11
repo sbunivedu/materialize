@@ -138,6 +138,55 @@
         </ul>
       </div>
 
+      <!-- MODAL -->
+      <h1>MODAL</h1>
+
+      <!-- MODAL TRIGGERS -->
+      <a href="#modal1" class="btn waves-effect">Modal 1</a>
+      <a href="#modal2" class="btn waves-effect red">Modal 2</a>
+
+      <!-- MODAL STRUCTURE -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Modal 2 Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
+        </div>
+      </div>
+
+      <!-- SIDENAV -->
+      <h1>SIDENAV</h1>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <a href="#"><i class="material-icons">cloud</i> Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <a class="subheader" href="#">Subheader</a>
+        </li>
+        <li>
+          <a class="waves-effect" href="#">Link 3</a>
+        </li>
+      </ul>
+      <a href="" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
       </div><!-- ./container -->
 
       <div style="height:500px"></div>
@@ -156,6 +205,12 @@
 
           // Init Slider
           $('.slider').slider();
+
+          // Init Modal
+          $('.modal').modal();
+
+          // Init Sidenav
+          $('.button-collapse').sideNav();
         });
       </script>
     </body>
