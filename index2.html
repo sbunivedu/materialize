@@ -109,6 +109,35 @@
 
       <img src="http://materializecss.com/images/sample-1.jpg" alt="" class="materialboxed" data-caption="Here is an image caption">
 
+      <!-- SLIDER -->
+      <h1>SLIDER</h1>
+
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="http://materializecss.com/images/sample-1.jpg" alt="">
+            <div class="caption center-align">
+              <h3>This is our tagline</h3>
+              <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+            </div>
+          </li>
+          <li>
+            <img src="http://materializecss.com/images/sample-1.jpg" alt="">
+            <div class="caption left-align">
+              <h3>This is our tagline</h3>
+              <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+            </div>
+          </li>
+          <li>
+            <img src="http://materializecss.com/images/sample-1.jpg" alt="">
+            <div class="caption right-align">
+              <h3>This is our tagline</h3>
+              <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
       </div><!-- ./container -->
 
       <div style="height:500px"></div>
@@ -124,6 +153,9 @@
 
           // Fire off toast
           Materialize.toast('Hello World', 3000);
+
+          // Init Slider
+          $('.slider').slider();
         });
       </script>
     </body>
